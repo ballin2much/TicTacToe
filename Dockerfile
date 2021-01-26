@@ -1,4 +1,4 @@
 FROM python:3
-COPY code/ code/
+COPY . code/
 WORKDIR /code/
-CMD ["python", "app.py"]
+RUN pip install numpy
