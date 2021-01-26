@@ -1,0 +1,32 @@
+#board {
+    display: grid;
+    grid-template-areas: 
+        "1 2 3"
+        "4 5 6"
+        "7 8 9";
+    text-align: center;
+    grid-gap: 2px;
+    background-color: black;
+    width: 300px;
+    height: 300px;
+}
+
+.cell {
+    background-color: white;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 50px;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    min-width: 100px;
+    min-height: 100px;
+}
+
+.wrapper {
+    margin: auto;
+    display: flex;
+    justify-content: center;
+}
