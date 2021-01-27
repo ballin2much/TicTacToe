@@ -1,8 +1,10 @@
-version: '3'
-
+version: "3.9"
+   
 services:
-  test:
-    build: .
-    command: python ./test.py
+  backend:
+    build: ./backend
+    command: python manage.py runserver 0.0.0.0:8000
     volumes:
-      - ./code:/code
+      - ./backend:/app
+    ports:
+      - "8000:8000"

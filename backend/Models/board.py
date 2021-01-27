@@ -2,8 +2,8 @@ import numpy as np
 import copy
 
 class board:
-    def __init__(self): 
-        self.board = np.full((3,3), " ")
+    def __init__(self, b=np.full((3,3), " ")): 
+        self.board = b
     
     def print_board(self):
         for i in self.board:

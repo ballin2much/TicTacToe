@@ -9,10 +9,10 @@ class player:
         self.symbol = symbol
 
 class ML_AI(player):
-    def __init__(self, symbol, alpha=0.9, gamma=0.95, q_init=0.6): 
+    def __init__(self, symbol, alpha=0.9, gamma=0.95, q_init=0.6, q={}): 
         self.symbol = symbol
         self.history = []
-        self.q = {}
+        self.q = q
         self.learning_rate = alpha
         self.value_discount = gamma
         self.default_q = q_init
