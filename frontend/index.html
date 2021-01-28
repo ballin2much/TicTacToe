@@ -26,10 +26,22 @@
             <div class = "cell" id="22"></div>
         </div>
     </div>
-    <div class="buttonRow">
-        <button id="X">Play as X's</button>
-        <button id="X">Play as O's</button>
+    
+    <div id="winner"></div>
+    
+    <div class="wrapper">
+        <div class="buttonRow" id="AIbtns">
+            <div class="btnwrap b1 r"><button id="X">Play as X's</button></div>
+            <div class="btnwrap b2 c"><button id="O">Play as O's</button></div>
+            <div class="btnwrap b3 l"><button id="aifirst">let AI Play First</button></div>
+            <div class="btnwrap b4 r"><button class="AI" data-type="MiniMax">Play MiniMax</button></div>
+            <div class="btnwrap b5 c"><button class="AI" data-type="10">Play 10 Game ML AI</button></div>
+            <div class="btnwrap b6 l"><button class="AI" data-type="100">Play 100 Game ML AI</button></div>
+            <div class="btnwrap b7 r"><button class="AI" data-type="1000">Play 1,000 Game ML AI</button></div>
+            <div class="btnwrap b8 c"><button class="AI" data-type="100000">Play 100,000 Game ML AI</button></div>
+            <div class="btnwrap b9 l"><button id="reset">Reset</button></div>
+            <div class="selected"><h1>MiniMax currently selected</h1></div>
+        </div>
     </div>
-    <div class="buttonRow"><button id="mini">Play MiniMax</button><button id="reset">Reset</button></div>
 </body>
 </html>

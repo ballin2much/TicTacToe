@@ -56,8 +56,8 @@ class ML_AI(player):
     def newGame(self):
         self.history = []
 
-    def save(self):
-        fw = open("My little AI", "wb")
+    def save(self, file_name):
+        fw = open(file_name, "wb")
         pickle.dump(self.q, fw)
         fw.close()
     
