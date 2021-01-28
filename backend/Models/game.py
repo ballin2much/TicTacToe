@@ -35,7 +35,7 @@ class game:
                 self.active_player = self.player1
             self.board.print_board()
             if self.winner() != False:
-                # self.reward()
+                self.reward()
                 return [True, True]
             else:
                 return [True, False]
