@@ -9,7 +9,4 @@ RUN pip install -r requirements.txt
 COPY . /app/
 # run gunicorn
 
-RUN adduser -D user
-USER user
-
 CMD gunicorn hello_django.wsgi:application --bind 0.0.0.0:$PORT
