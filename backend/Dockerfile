@@ -7,6 +7,6 @@ WORKDIR /app
 COPY requirements.txt /app/
 RUN pip install -r requirements.txt
 COPY . /app/
-# run gunicorn
 
-CMD gunicorn hello_django.wsgi:application --bind 0.0.0.0:$PORT
+# run gunicorn
+CMD gunicorn TicTacToe.wsgi:application --bind 0.0.0.0:$PORT
