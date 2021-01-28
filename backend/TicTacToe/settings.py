@@ -27,7 +27,7 @@ SECRET_KEY = os.environ.get('SECRET_KEY', default='foo')
 
 DEBUG = int(os.environ.get('DEBUG', default=0))
 
-ALLOWED_HOSTS = ['localhost', '127.0.0.1']
+ALLOWED_HOSTS = ['localhost', '127.0.0.1', '.herokuapp.com]
 
 # Application definition
 
@@ -128,4 +128,5 @@ CORS_ORIGIN_WHITELIST = [
     'http://localhost:8080',
     'http://172.30.214.212:8080',
     'http://127.0.0.1:5500',
+    'https://ballin2much.github.io/mltactoe/'
 ]
