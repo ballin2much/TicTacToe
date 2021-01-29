@@ -8,5 +8,6 @@ COPY requirements.txt /app/
 RUN pip install -r requirements.txt
 COPY . /app/
 
+RUN python manage.py collectstatic --noinput
 # run gunicorn
 CMD gunicorn TicTacToe.wsgi:application --bind 0.0.0.0:$PORT
