@@ -1,9 +1,3 @@
-To run this file use the following commands:
-``` Python
-Docker build -t tic-tac-toe .
-Docker run --interactive -tty tic-tac-toe
-```
+A tic-tac-toe AI trained using Q-learning model. Also a minimax algorithm AI as well.
 
-Currently it works through the command line, going to work on a GUI.
-
-Just a simple command line tic-tac-toe with minimax AI move recommendations.
+Backend uses Django while frontend is simple HTML and JQuery. Site link is https://ballin2much.github.io/mltactoe/
