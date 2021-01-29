@@ -24,3 +24,6 @@ def make_move(req):
         AI.load("./Trained Models/"+req["AI"]+"GamesAI")
     move = AI.get_move(tempBoard)
     return Response({"board": tempBoard.simulate_move(move, AI)[1].board})
+
+def homepage(req):
+    return render(req, 'index.html')

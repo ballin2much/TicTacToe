@@ -59,7 +59,7 @@ ROOT_URLCONF = 'TicTacToe.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [],
+        'DIRS': [os.path.join(BASE_DIR, 'templates')],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
@@ -128,5 +128,9 @@ CORS_ORIGIN_WHITELIST = [
     'http://localhost:8080',
     'http://172.30.214.212:8080',
     'http://127.0.0.1:5500',
-    'https://ballin2much.github.io/mltactoe/',
+    'https://ballin2much.github.io',
+]
+
+STATICFILES_DIRS = [
+    BASE_DIR / "static",
 ]

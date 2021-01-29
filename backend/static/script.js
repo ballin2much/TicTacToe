@@ -134,7 +134,7 @@ function getResponse(ai) {
             data: JSON.stringify({
                 board: board,
                 symbol: player,
-                AI: ai
+                AI: String(ai)
             }),
             success: (response, textStatus, jqXHR) => {
                 updateBoard(response.board);
