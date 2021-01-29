@@ -128,7 +128,7 @@ function getResponse(ai) {
         console.log(board);
         $.ajax({
             type: "POST",
-            url: "http://127.0.0.1:8000/make-move/",
+            url: "https:/ml-tac-toe.herokuapp.com/make-move/",
             contentType: "application/json; charset=utf-8",
             dataType: "json",
             data: JSON.stringify({
