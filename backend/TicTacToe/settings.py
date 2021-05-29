@@ -130,6 +130,7 @@ CORS_ORIGIN_WHITELIST = [
     'http://172.30.214.212:8080',
     'http://127.0.0.1:5500',
     'https://ballin2much.github.io',
+    'https://dontquestionmark.com',
 ]
 
 STATICFILES_DIRS = [
