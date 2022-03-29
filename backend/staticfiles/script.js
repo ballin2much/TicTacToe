@@ -18,6 +18,7 @@ $(document).ready(function() {
                 $(".cell").css('pointer-events', 'auto');
             })
         }
+        started = true;
     })
 
     $("#X").click(function(){
