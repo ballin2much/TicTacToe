@@ -16,6 +16,7 @@ $(document).ready(function() {
             $(".cell").css('pointer-events', 'none');
             getResponse(AItype).then(() => {
                 $(".cell").css('pointer-events', 'auto');
+                started = true;
             })
         }
         started = true;
